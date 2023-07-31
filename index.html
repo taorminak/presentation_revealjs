@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>React Virtual DOM</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-color="rgb(25,28,33)">
+          <h3>React Virtual DOM</h3>
+          <img src="./assets/react.png" width="90px" />
+        </section>
+        <section>
+          <h4>HTML and the Document Object Model (DOM)</h4>
+          <section>
+            A "First Aid Kit" using HTML<img
+              src="./assets/html-code.png"
+              width="700px"
+            />
+          </section>
+          <section>
+            A tree-like representation for the "First Aid Kit"<img
+              src="./assets/dom-tree.png"
+              width="700px"
+            />
+          </section>
+          <section>
+            Updating vs Creating New Elements<img
+              src="./assets/updating.png"
+              width="700px"
+            /><img src="./assets/creating.png" width="700px" />
+          </section>
+        </section>
+        <section>
+          <section><h3>React Virtual DOM: A Game-Changer</h3></section>
+          <section>
+            <ul>
+              <li>Data changes in React component</li>
+              <li>New Virtual DOM representation created</li>
+              <li>Comparison with previous Virtual DOM</li>
+              <li>Identifying minimal changes for actual DOM sync</li>
+              <li>Efficient application of changes to real DOM</li>
+              <li>Minimizing unnecessary updates and re-renders</li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              PROS:
+              <li>Enhanced Performance</li>
+              <li>Efficient Updates</li>
+              <li>Abstraction and Simplicity</li>
+              <li>Cross-Platform Compatibility</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h3>React DOM: A Powerful Tool for Building Modern UIs</h3>
+        </section>
+        <section>
+          <section>
+            <section>
+              <h5>Angular DOM</h5>
+              <h5>React Virtual DOM</h5>
+              <h5>Vue Virtual DOM</h5>
+              <img src="./assets/angular_vue.png" width="460px" />
+            </section>
+          </section>
+          <section>
+            <a
+              href="https://rawgit.com/krausest/js-framework-benchmark/master/webdriver-ts-results/table.html"
+              >Stefan Krause’s analysis</a
+            ><img src="./assets/study.png" />
+          </section>
+        </section>
+        <section data-background-color="rgb(25,28,33)">
+          <h3>React Virtual DOM</h3>
+          <img src="./assets/react.png" width="90px" />
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
